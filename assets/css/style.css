@@ -1,0 +1,389 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'acetone';
+  src: url('../fonts/acetone.otf');
+}
+
+@font-face {
+font-family: 'roboto';
+src: url('../fonts/roboto.ttf');
+}
+
+@font-face {
+  font-family: 'blackout';
+  src: url('../fonts/blackout.ttf');
+}
+
+@font-face {
+  font-family: 'neon';
+  src: url('../fonts/neon.otf');
+}
+
+@font-face {
+  font-family: 'bastian';
+  src: url('../fonts/bastian.ttf');
+}
+
+#title-spacing {
+  padding-left: -100px;
+}
+
+h1 {
+  font-family: 'neon';
+  font-size: 70px;
+}
+
+.navbar-brand {
+  font-size: 25px;
+}
+
+.navbar-nav a {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 17px;
+  margin-left: 15px;
+}
+
+nav a:hover {
+  opacity: .5;
+  transition: all .3s ease;
+}
+
+#subtitle {
+  font-family: 'roboto'; 
+  font-size: 18px;
+}
+
+header {
+  height: 100vh;
+  margin-bottom: 280px;
+}
+
+#headerImg {
+  margin-top: 200px;
+}
+
+#downarrow {
+  position: relative;
+  top: 190px;
+  font-size: 90px;
+}
+
+
+
+
+/* from old portfolio */
+
+section {
+  padding-top: 70px;
+}
+
+/* section header font styling */
+h3 {
+  font-family: 'acetone';
+  font-size: 40px;
+  font-weight: lighter;
+  text-align: center;
+}
+
+/* ===== ABOUT SECTION ===== */
+
+#about {
+  padding-top: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 800px;
+}
+
+#about h3 {
+  font-size: 50px;
+  padding-bottom: 10px;
+}
+
+.aboutWrapper {
+  padding-bottom: 150px;
+  background-color: #7510f6;
+}
+
+#about p {
+  text-align: center;
+  font-family: 'roboto';
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.about-cards {
+  width: 800px;
+  position: relative;
+  bottom: 500px;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.icons {
+  padding: 50px 0px;
+  width: 50px;
+  position: relative;
+  left: 45%;
+  transform: translate(50% 50%);
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+h5, h6 {
+  color: #7510f6;
+}
+
+h5:hover, h6:hover {
+  opacity: .8;
+
+}
+
+/* ===== GALLERY ===== */
+/* css from bootstrap made, researched and understood (trial and error mostly) - adapted to be my own  */
+/* link: https://bootstrapmade.com/myportfolio-bootstrap-portfolio-website-template/ */
+
+.gallery-item .item-content {
+  filter: drop-shadow(0 0 2px black);
+  position: relative;
+  overflow: hidden;
+  display: block;
+}
+
+/* adds a fade over the image to be applied when hovered */
+.gallery-item .item-content:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  visibility: hidden;
+  opacity: 0;
+  transition: .3s all ease-in-out;
+}
+
+/* on hover, make the image zoom slightly, smoothly */
+.gallery-item .item-content img {
+  transform: scale(1);
+  transition: .3s transform ease;
+
+}
+
+/* position gallery text to be centered */
+.gallery-text {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  /* z-index positions the text at the front */
+  z-index: 3; 
+  transform: translateY(-50%);
+  opacity: 0;
+  visibility: hidden;
+  margin-top: 20px;
+  transition: .3s all ease;
+}
+
+/* gallery text styling */
+
+.gallery-text h3 {
+  font-size: 30px;
+}
+
+.gallery-text span {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+/* zoom in on image on hover */
+.item-content:hover img {
+  transform: scale(1.05);
+}
+
+/* display linear gradient on hover*/
+.item-content:hover:after {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* display text content on hover */
+.item-content:hover .gallery-text {
+  margin-top: 0px;
+  opacity: 1;
+  visibility: visible;
+}
+
+
+/* ===== CONTACT SECTION ===== */
+
+#contact {
+  padding-top: 150px;
+  background: #7510f6;
+  padding-bottom: 100px;
+}
+
+#contact h3 {
+  padding: 50px;
+  margin-top: -150px;
+}
+
+form {
+  width: 50%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input {
+  margin-top: 10px;
+}
+
+button {
+  margin-top: 20px;
+}
+
+
+/* space all buttons evenly and display flex */
+.contact-list ul {
+  padding-left: 0px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1000px;
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  font-family: 'acetone';
+  font-size: 35px;
+}
+
+/* styling for each button in the contact list  */
+.contact-list a {
+  padding: 8px 45px;
+  color: rgb(41, 41, 41);
+  text-decoration: none;
+  border: 2px solid white;
+  background-color: blueviolet;
+  font-size: 30px;
+}
+
+/* ===== COPYRIGHT INFO ===== */
+
+/* center the footer content */
+footer {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-top: 150px;
+  padding-bottom: 20px;
+  font-family: Arial, Helvetica, sans-serif
+}
+
+h4 {
+  font-size: 14px;
+}
+
+.overlay {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  opacity: 0;
+  transition: .4s ease;
+  color: white;
+  font-family: 'bastian';
+}
+
+
+/* ===== MEDIA QUERIES ===== */
+
+@media screen and (max-width: 1000px) {
+
+  #about {
+    width: 80%;
+  }
+  button {
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 50px;
+  }
+
+  #contact {
+    padding-bottom: 300px;
+  }
+
+  .contact-list ul {
+    padding-top: 100px;
+    width: 500%;
+    display: block;
+    text-align: center;
+  }
+
+  .contact-list li {
+    margin-top: 10px;
+  }
+
+  .about-cards {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  #about h3 {
+    font-size: 30px;
+  }
+
+  .about-cards {
+    margin-top: -400px;
+    padding-bottom: 600px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+
+  header {
+    height: 50vh;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  #downarrow {
+    padding: 0;
+    top: 00px;
+  }
+
+  .about-cards {
+    bottom: 850px;
+  }
+
+  #work {
+    bottom: 300px;
+    position: relative;
+  }
+
+  #contact {
+    padding-top: 0px;
+  }
+
+  .navbar-brand {
+    font-size: 15px;
+    margin-left: -30px;
+  }
+
+  .navbar-nav {
+    display: block;
+  }
+}
