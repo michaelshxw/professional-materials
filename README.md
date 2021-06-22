@@ -1,25 +1,36 @@
-# Professional Portfolio
+# Michael Shaw - Portfolio
 
-This is a deployed portfolio for Michael Shaw.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+## Project Description
+
+This is a portfolio for Michael Shaw. Contact details are available below. Please reach out if you would like to work together. 
+
+## Table of Contents
+* [Installation](#installation)  
+* [Technologies](#technologies)
+* [License](#license)
+* [Questions](#questions)
+
+## Installation 
+
+To install this application, a text editor such as Visual Studio Code is required. This can be downloaded here. Simply clone from the GitHub repository from there.
+
+You can view this portfolio live on GitHub pages [here](https://michaelshxw.github.io/professional-materials/).
+
+## Technologies
+
+* HTML
+* CSS
+* Bootstrap 
+
+## License
+
+This project is licensed with the MIT license.
+
+## Questions
+
+This portfolio was designed and created by [Michael Shaw](http://www.github.com/michaelshxw). For any questions or queries, please email me here: [michaelshxw@gmail.com](mailto:michaelshxw@gmail.com)
 
 ![](./screenshots/landing-page.png)
 
-### Getting Started
-
-This project has been deployed to GitHub Pages. To view, you can follow the deployment link. Or, download the source files and open on your local computer.
-
-* [Deployed GitHub IO](https://michaelshxw.github.io/professional-portfolio/)
-* [GitHub Repository](https://github.com/michaelshxw/professional-portfolio)
-
-### Prerequisites
-To install this application, a text editor such as Visual Studio Code is required. This can be downloaded [here.](https://code.visualstudio.com/download)
-
-### Languages Used
-* HTML 
-* CSS
-
-### Installation
-To install this code, download the zip file, or use GitHub's guidelines to clone the repository
-
-### Authors
-* **Michael Shaw** (HTML and CSS) [GitHub Profile](https://github.com/michaelshxw)
