@@ -18,7 +18,7 @@ To install this application, a text editor such as Visual Studio Code is require
 
 You can view this portfolio live on GitHub pages [here](https://michaelshxw.github.io/professional-materials/).
 
-## Technologies
+## Technologies 
 
 * HTML
 * CSS
